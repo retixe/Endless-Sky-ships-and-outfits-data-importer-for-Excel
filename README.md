@@ -17,7 +17,7 @@ Macros that fetch ships and outfits data from Endless Sky folder to an Excel fil
 
 5. Select a .bas file, click Open
 
-6. Repeat step 4-5 for every other .bas files   ;)
+6. Repeat step 4-5 for every other .bas files	;)
 
 7. If your game folder is NOT at C:\Program Files (x86)\Steam\steamapps\common\Endless Sky
 
@@ -29,7 +29,9 @@ Macros that fetch ships and outfits data from Endless Sky folder to an Excel fil
 
 8. Go back to the Excel, click Developer > Macros, run Setup
 
-9. re-adjust cell sizes to make them readable
+9. Re-adjust cell sizes to make them readable
+
+10. Re-run the macros for specific sheets (e.g. Ship.Data for ships) if you have made changes to their headings
 
 
 ## Customize the (limited) attributes you want to fetch 
@@ -40,12 +42,19 @@ Macros that fetch ships and outfits data from Endless Sky folder to an Excel fil
 
 - headings are not case-sensitive
 
-- the macros start scanning for headings from cell C2 to right, stop once it scanned an empty cell or cell with only space
+- the macros will start scanning for headings from cell C2 to the right, and stop once it scanned an empty cell or cell with only space
 
-- Not intened for fetching visual attributes, though they may work
+- Not intened for fetching visual attributes like sprites, though they may work
 
 - Cannot fetch dafault outfits for ships (http://endless-sky.7vn.io/ should cover all your needs in this aspect ~~and all other aspects, actually this whole project is redundant~~)
 
+## Update-It-Yourself
+
+- New species? Add their data file paths to the "filepath" sheet, ships on the left, outfits on the right (and pray that the macros can read them)
+
+- Balance change? Just re-run the macros
+
+- the macros will start scanning for paths from cell B3(for ships)/D3(for outfits) to the bottom, and stop once it scanned an empty cell or cell with only space
 
 ## Read data from plugins
 
