@@ -5,7 +5,7 @@ Macros that fetch ships and outfits data from Endless Sky folder to an Excel fil
 **Only tested on Windows 10**
 
 
-## Installation guide for those who are not familiar with VBA
+## Installation guide for those not familiar with VBA
 
 1. Download all the .bas files in Module folder of this repository
 
@@ -34,7 +34,7 @@ Macros that fetch ships and outfits data from Endless Sky folder to an Excel fil
 10. Re-run the macros for specific sheets (e.g. Ship.Data for ships) if you have made changes to their headings
 
 
-## Customize the (limited) attributes you want to fetch 
+## Customize the attributes you want to fetch 
 
 - You can edit the content and number of headings to fetch the data you want, go into the game file listed in filepath to find the valid attributes
 
